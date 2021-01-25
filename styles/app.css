@@ -1,0 +1,16 @@
+html, body, #__next {
+    @apply min-h-full h-full;
+}
+
+h1 b {
+    background: linear-gradient(to right, #60A5FA, #EC4899);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#bg-page {
+    background-color: #1f2937;
+    background-image: url(https://static.desica.uk/hotlink-ok/topography.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}

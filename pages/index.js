@@ -1,65 +1,21 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import Nav from '../components/nav'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+    <div className="h-full w-full">
+        <Nav />
+      <div className="bg-gray-800 h-full px-64" id="bg-page">
+        <div className="absolute transform translate-y-3/4">
+            <h1 className="text-white text-6xl pb-4">Welcome to <br /><b>Appfolio</b></h1>
+            <p className="text-white">The portfolio site built for the modern web</p>
+            <div className="flex">
+                <button className="p-3 mt-6 bg-white text-gray-800 rounded-lg focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 ring-offset-gray-800">Get started</button>
+                <a href="#" className="ml-3 p-3 mt-6 bg-gray-700 text-white rounded-lg focus:bg-gray-600 focus:outline-none">Learn more</a>
+            </div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+        <div className="h-full"></div>
+      </div>
     </div>
   )
 }

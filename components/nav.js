@@ -1,7 +1,7 @@
 export default function Nav() {
     return (
-        <div className="mx-64 py-4 fixed container text-white" id="nav">
-            <nav className="flex justify-between mr-128">
+        <div className="px-64 py-4 fixed container text-white h-12 w-screen z-50" id="nav">
+            <nav className="flex justify-between mr-128 w-full">
                 <div>
                     <a href="#">
                         <h1>
@@ -10,7 +10,9 @@ export default function Nav() {
                     </a>
                 </div>
                 <ul className="flex flex-row justify-self-end">
-                    <li><a>Get started</a></li>
+                    <li><a> </a></li>
+                    <li><a> </a></li>
+                    <li><a> </a></li>
                 </ul>
             </nav>
         </div>

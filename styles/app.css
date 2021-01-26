@@ -1,5 +1,6 @@
 html, body, #__next {
     @apply min-h-full h-full;
+    scroll-behavior: smooth;
 }
 
 h1 b {
@@ -11,6 +12,32 @@ h1 b {
 #bg-page {
     background-color: #1f2937;
     background-image: url(https://static.desica.uk/hotlink-ok/topography.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @apply bg-fixed;
+}
+
+#nav {
+    backdrop-filter: blur(5px);
+    width: 100% !important;
+}
+
+@keyframes scroll-up {
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    45% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+        display: none;
+        transform: translateY(-5vh);
+    }
+}
+
+.up {
+    animation: infinite 15s ease-in-out scroll-up;
 }

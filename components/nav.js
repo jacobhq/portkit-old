@@ -1,6 +1,8 @@
 export default function Nav() {
     return (
-        <div className="px-64 py-4 fixed container text-white h-12 w-screen z-50" id="nav">
+        <div>
+            <div className="h-12 fixed w-full z-40" id="nav"></div>
+        <div className="2xl:px-64 xl:px-64 lg:px-64 md:px-64 sm:px-32 px-8 py-4 fixed container text-white h-12 w-screen z-50">
             <nav className="flex justify-between mr-128 w-full">
                 <div>
                     <a href="#">
@@ -15,6 +17,7 @@ export default function Nav() {
                     <li><a> </a></li>
                 </ul>
             </nav>
+        </div>
         </div>
     )
 }

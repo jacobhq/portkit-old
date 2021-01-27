@@ -7,7 +7,7 @@ export default function Nav() {
                 <div>
                     <a href="#">
                         <h1>
-                            <b>Appfolio</b>
+                            <b>Portkit</b>
                         </h1>
                     </a>
                 </div>

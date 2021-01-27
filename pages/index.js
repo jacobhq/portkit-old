@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Nav from '../components/nav'
-import { signin, signout, useSession } from 'next-auth/client'
+import { signin, useSession } from 'next-auth/client'
 
 export default function Home() {
   return (

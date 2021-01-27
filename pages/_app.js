@@ -1,11 +1,14 @@
 import "../styles/app.css"
 import "tailwindcss/tailwind.css";
-import Nav from "../components/nav"
+import { Provider } from 'next-auth/client'
 
-function MyApp({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
+  const { session } = pageProps
   return (
-    <Component {...pageProps} />
+    <Provider session={session}>
+      <Component {...pageProps} />
+    </Provider>
   )
 }
 
-export default MyApp
+export default App

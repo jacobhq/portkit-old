@@ -1656,10 +1656,10 @@ native-url@0.3.4:
   dependencies:
     querystring "^0.2.0"
 
-next-auth@3.24.0:
-  version "3.24.0"
-  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-3.24.0.tgz#2fb1f5b9c7756ba16f81b95fb066833e3ef5525d"
-  integrity sha512-fLpjwYYDvPNexoCuGyPTozzos5ko7XSu9WXPn2d2qEVfhDG8BtwBcDZw+maIDOd9IEmsaZ+ljtdCC/CNjbLRAA==
+next-auth@3.27.0:
+  version "3.27.0"
+  resolved "https://registry.yarnpkg.com/next-auth/-/next-auth-3.27.0.tgz#2a40ab7fcc40c81ecb3e271059d83513b70d09fd"
+  integrity sha512-mnPwODN+g4901o5TcK3x8+pxEM4si19QPOkP7NCXMz90VMMEDBlm3SGviraYQm6QwYxrwK8sG1hN6SxLIM7ckw==
   dependencies:
     "@babel/runtime" "^7.14.0"
     "@next-auth/prisma-legacy-adapter" "0.0.1-canary.127"
